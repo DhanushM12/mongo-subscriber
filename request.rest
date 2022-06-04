@@ -2,10 +2,27 @@ POST http://localhost:8000/subscriber/
 Content-Type: application/json
 
 {
-    "name": "xyz",
-    "channel": "cn"
+    "name": "**",
+    "channel": "**"
 }
 
 ###
 
 GET http://localhost:8000/subscriber/
+
+###
+
+GET http://localhost:8000/subscriber/abc
+
+###
+
+DELETE http://localhost:8000/subscriber/abc
+
+###
+
+PATCH http://localhost:8000/subscriber/abc
+Content-Type: application/json
+
+{
+    "name": "***"
+}
